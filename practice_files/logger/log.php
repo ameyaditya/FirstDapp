@@ -14,7 +14,7 @@ if($num == 1)
 {
 	$_SESSION['logged_in'] = 1;
 	unset($_SESSION['name_error']);
-	header("Location: login.php");
+	header("Location: homepage.php");
 }
 else
 {
