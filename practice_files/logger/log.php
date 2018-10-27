@@ -13,6 +13,7 @@ $num = mysqli_num_rows($result);
 if($num == 1)
 {
 	$_SESSION['logged_in'] = 1;
+	$_SESSION['username'] = $emailid;
 	unset($_SESSION['name_error']);
 	header("Location: homepage.php");
 }
